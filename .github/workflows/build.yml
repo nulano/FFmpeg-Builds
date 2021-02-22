@@ -2,11 +2,11 @@ name: Build FFmpeg
 
 on:
   push: []
+  workflow_dispatch: []
   repository_dispatch:
     types: [build]
   schedule:
     - cron: '0 12 * * *'
-  workflow_dispatch: []
 
 jobs:
   purge_artifacts:
